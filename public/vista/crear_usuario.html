@@ -1,66 +1,58 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 
 <head>
-    <title>Registrar Usuario</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
 </head>
 
 <body>
-    <header>
-        <h1>Registro De Usuarios Para Venta De Entradas</h1>
-    </header>
+    <form id="formulario01" method="POST" action="../controladores/crear_usuario.php">
 
-    <form>
-        <hr />
-        <h3>Resgistrar Usuario</h3>
-
-        <!--Codigo-->
-        <label for="codigo">Codigo:</label><br>
-        <input type="number" name="id" maxlength="10" required>
-        <br /><br />
-
-        <!--Cedula-->
-        <label for="cedula">Cedula:</label><br>
-        <input type="text" name="cedl" maxlength="10" required>
-        <br /><br />
-
-
-        <!--Nombres-->
-        <label for="nombres">Nombres:</label><br>
-        <input type="text" name="nombrs" maxlength="32" required>
-        <br /><br />
-
-        <!--Apellidos-->
-        <label for="apellidos">Apellidos:</label><br>
-        <input type="text" name="apellids" maxlength="32" required>
-        <br /><br />
-
-        <!--Telefono-->
-        <label for="telefono">Telefono:</label><br>
-        <input type="tel" name="telf" maxlength="10" required>
-        <br /><br />
-
-        <!--Correo-->
-        <label for="correo">Correo:</label><br>
-        <input type="email" name="eml" maxlength="40" required>
-        <br /><br />
-
-        <!--Password-->
-        <label for="pass">Password:</label><br>
-        <input type="password" name="password" maxlength="8" required>
-        <br /><br />
-
-        <!--Fecha de nacimiento-->
-        <label for="fechNac">Fecha de Nacimiento:</label><br>
-        <input type="date" name="dateN" maxlength="10" required>
-        <br /><br />
-
-        <br /><br />
-        <input type="submit" name="submit" value="Registrarme">
+        <label for="codigo">ID (*)</label>
+        <input type="number" id="id" name="id" value="" placeholder="Ingrese ID ..." required />
+        <br>
+        <br>
+        <label for="cedula">Cedula (*)</label>
+        <input type="text" id="cedula" name="cedula" value="" maxlength="10" placeholder="Ingrese el número de cedula ..." required />
+        <br>
+        <br>
+        <label for="nombres">Nombres (*)</label>
+        <input type="text" id="nombres" name="nombres" value="" placeholder="Ingrese sus dos nombres
+..." required />
+        <br>
+        <br>
+        <label for="apellidos">Apelidos (*)</label>
+        <input type="text" id="apellidos" name="apellidos" value="" placeholder="Ingrese sus dos apellidos
+..." required />
+        <br>
+        <br>
+        <label for="direccion">Dirección (*)</label>
+        <input type="text" id="direccion" name="direccion" value="" placeholder="Ingrese su dirección ..." required />
+        <br>
+        <br>
+        <label for="telefono">Teléfono (*)</label>
+        <input type="text" id="telefono" name="telefono" value="" placeholder="Ingrese su número telefónico
+..." required />
+        <br>
+        <br>
+        <label for="fecha">Fecha Nacimiento (*)</label>
+        <input type="date" id="fechaNacimiento" name="fechaNacimiento" value="" placeholder="Ingrese su
+fecha de nacimiento ..." required />
+        <br>
+        <br>
+        <label for="correo">Correo electrónico (*)</label>
+        <input type="email" id="correo" name="correo" value="" placeholder="Ingrese su correo electrónico
+..." required />
+        <br>
+        <br>
+        <label for="correo">Contraseña (*)</label>
+        <input type="password" id="contrasena" name="contrasena" value="" placeholder="Ingrese su
+contraseña ..." required />
+        <br>
+        <br>
+        <input type="submit" id="crear" name="crear" value="Aceptar" />
+        <input type="reset" id="cancelar" name="cancelar" value="Cancelar" />
     </form>
-
-
 </body>
 
 </html>
